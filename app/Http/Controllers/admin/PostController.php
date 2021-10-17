@@ -43,7 +43,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-
         if($request->hasFile('image')){
             $imageName = time().'.'.request()->image->getClientOriginalExtension();
             request()->image->move(public_path('images'), $imageName);
