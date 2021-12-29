@@ -23,7 +23,6 @@ class AuthController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-        
        
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
@@ -42,11 +41,11 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {  
-        // $request->validate([
-        //     'name' => 'required',
-        //     'email' => 'required|email|unique:users',
-        //     'password' => 'required|min:6'
-        // ]);
+        User::create([
+            'name' => 'John',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('1234')
+        ]);
            
         // User::create([
         //     'name' => $request->name,
@@ -54,6 +53,17 @@ class AuthController extends Controller
         //     'password' => Hash::make($data['password'])
         // ])
         return redirect("dashboard")->withSuccess('You have signed-in');
+    }
+
+
+    public function create()
+    {  
+        User::create([
+            'name' => 'John',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('1234'),
+            'status' => 1
+        ]);
     }
 
 

@@ -39,6 +39,7 @@
                                 <form method="POST" action="{{ isset($post) ? url("dashboard/post/{$post->id}") : url('dashboard/post')}}" enctype="multipart/form-data">
 
                                     @csrf
+                                    
                                     <input type="hidden" value="{{ isset($post) ? 'PUT' : 'POST'}}" name="_method">
 
                                     <div class="form-group">
