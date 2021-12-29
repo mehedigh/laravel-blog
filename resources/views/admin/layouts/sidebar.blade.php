@@ -28,9 +28,23 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a href="{{url('dashboard/settings')}}" class="nav-link">
+                    <i class="nav-icon fas fa-cog"></i>
+                    <p>Settings</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{url('dashboard/plans')}}" class="nav-link">
+                    <i class="nav-icon far fa-user"></i>
+                    <p>Plans</p>
+                </a>
+            </li>
+
             {{-- @if (auth()->user()->role == 'admin') --}}
               <li class="nav-item">
-                  <a href="{{url('users')}}" class="nav-link">
+                  <a href="{{url('dashboard/users')}}" class="nav-link">
                       <i class="nav-icon far fa-user"></i>
                       <p>Users</p>
                   </a>
@@ -46,8 +60,36 @@
 
             <li class="nav-item">
                 <a href="{{url('dashboard/post')}}" class="nav-link">
-                    <i class="nav-icon far fa-file"></i>
-                    <p>Posts</p>
+                    <i class="nav-icon far fa-image"></i>
+                    <p>Blogs</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{url('dashboard/features')}}" class="nav-link">
+                    <i class="nav-icon far fa-circle"></i>
+                    <p>Features</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{url('dashboard/pages')}}" class="nav-link">
+                    <i class="nav-icon far fa-circle"></i>
+                    <p>Pages</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{url('dashboard/faqs')}}" class="nav-link">
+                    <i class="nav-icon far fa-circle"></i>
+                    <p>FAQs</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{url('dashboard/contacts')}}" class="nav-link">
+                    <i class="nav-icon far fa-circle"></i>
+                    <p>Contact</p>
                 </a>
             </li>
             

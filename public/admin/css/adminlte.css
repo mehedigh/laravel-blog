@@ -52441,3 +52441,7 @@ a.text-muted:hover {
   color: #dd1111 !important;
   margin-left: 15px;
 }
+
+.add_area{
+  display: none;
+}

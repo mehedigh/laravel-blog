@@ -23,6 +23,31 @@
     }
   });
 
+  $(document).on('click', ".add_btn", function() {
+      $('.add_area').show();
+      $('.list_area').hide();
+      return false;
+  });
+
+  $(document).on('click', ".cancel_btn", function() {
+      $('.add_area').hide();
+      $('.list_area').show();
+      return false;
+  });
+
+
+  $(document).on('click', ".add_btn2", function() {
+      $('.add_area2').show();
+      $('.list_area2').hide();
+      return false;
+  });
+
+  $(document).on('click', ".cancel_btn2", function() {
+      $('.add_area2').hide();
+      $('.list_area2').show();
+      return false;
+  });
+
   
 
   $(document).on('click', ".delete_item", function() {

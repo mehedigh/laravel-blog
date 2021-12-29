@@ -5,6 +5,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\PostController;
 use App\Http\Controllers\admin\UserController;
+use App\Http\Controllers\admin\FeatureController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -27,6 +28,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::resource('/dashboard/category', CategoryController::class);
     Route::resource('/dashboard/post', PostController::class);
     Route::resource('/dashboard/users', UserController::class);
+    Route::resource('/dashboard/features', FeatureController::class);
 });
 
 
